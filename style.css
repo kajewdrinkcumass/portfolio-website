@@ -4,7 +4,6 @@ body{
     background-color: #f6f6f6;
     min-height: 100vh;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;;
-    
 }
 
 .header, .nav-menu{
@@ -15,10 +14,6 @@ body{
     padding-left: 2rem ;
     height: 70px;
     top:0;
-}
-
-h1{
-    font-size: 20px;
 }
 
 h4{
@@ -47,7 +42,7 @@ a h4 {
     right: 0;
     width: 0%;
     height: 2px;
-    background-color: #000;
+    background-color: black;
     transition: width 0.5s ease;
   }
   
@@ -59,9 +54,13 @@ a h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #008000;
     font-size: 40px;
     margin-left: 25px;
+}
+
+span{
+    color: green;
 }
 
 
@@ -69,13 +68,12 @@ a h4 {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    background-color: none;
     margin-top: 300px;
-    width: 620px;
-    height: 90px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 550px;
+    height: 70px;
+    background-color: #000;
+
 }
 
 section{
@@ -86,13 +84,25 @@ section{
     bottom:0;
 }
 
-.typetext{
+/*.description{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    justify-content: center;
+    font-size: 30px;
     margin-top: 60px;
-    width: 400px;
+    font-weight: 550;
+    width: 430px;
+}*/
+
+.description2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 60px;
+    font-weight: 550;
+    width: 555px;
 }
 
 
@@ -103,12 +113,11 @@ section{
     margin-right: auto;
     display: grid;
     height: 700px;
-    max-width: 1500px;
+    width: 1500px;
     left: 0;
     right: 0;
-    grid-template: 1fr/1fr ;
     margin-top: 5px;
-    
+    grid-template-columns: 1fr 1fr;
 }
 
 .screen{
@@ -128,6 +137,10 @@ section{
 .typetext2, .typetext3, .typetext4, .typetext5{
     color: green;
     padding: 0.5rem;
+}
+
+.typetext2{
+    width: 400px;
 }
 
 .typetext3{
@@ -181,8 +194,98 @@ section{
     background-color: #2aca3e;
 }
 
-.tools{
-    width: auto;
-    height: 200px;
+.showcase{
+    height: 500px;
+    width: 1500px;
     background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
 }
+
+.tools{
+    width: 95%;
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 95px;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    grid-auto-rows: 100px;
+}
+.website{
+    height: 500px;
+    width: 700px;
+    background-color: blue;
+}
+
+
+h1{
+  color: green;
+}
+
+img{
+    height: 150px;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+.cat{
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 1300px;
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .screen, .terminal{
+        width: 95%;
+    }
+    .cat{
+        margin-left: 80%;
+        margin-right: 30%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1100px) {
+    .cat{
+        margin-left: 70%;
+        margin-right: 30%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .cat{
+        margin-left: 60%;
+        margin-right: 30%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .description2{
+        width: 476px;
+    }
+
+    .name{
+        font-size: 30px;
+        margin-left: auto;
+        margin-right:auto ;
+    }
+    .title{
+        width: 95%;
+    }
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    transition: all 0.5s ease;
+  }
