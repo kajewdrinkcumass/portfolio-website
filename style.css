@@ -1,0 +1,292 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #f6f6f6;
+    min-height: 100vh;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;;
+}
+
+.header, .nav-menu{
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    grid-gap: 30px;
+    padding-left: 2rem ;
+    height: 70px;
+    top:0;
+}
+
+h4{
+    color: black;
+    margin: none;
+    border-radius: 3px;
+    margin-top: 40px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a h4 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  a h4:after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease;
+  }
+  
+  a h4:hover:after {
+    width: 100%;
+  }
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #008000;
+    font-size: 40px;
+    margin-left: 25px;
+}
+
+span{
+    color: green;
+}
+
+
+.title{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+    margin-top: 300px;
+    width: 550px;
+    height: 70px;
+    background-color: #000;
+    border-radius:  6px;
+
+}
+
+section{
+    /*position: fixed;*/
+    height: 64vh;
+    width: 100%;
+    top: 0;
+    bottom:0;
+}
+
+/*.description{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 60px;
+    font-weight: 550;
+    width: 430px;
+}*/
+
+.description2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 60px;
+    font-weight: 550;
+    width: 555px;
+}
+
+
+.terminal{
+    position: absolute;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    height: 700px;
+    width: 1500px;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.screen{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    height: 800px;
+    width: 1500px;
+    background-color: #D3D3D3;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.75);
+}
+
+.typetext2, .typetext3, .typetext4, .typetext5{
+    color: green;
+    padding: 0.5rem;
+}
+
+.typetext2{
+    width: 400px;
+}
+
+.typetext3{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.typetext4{
+    position: absolute;
+    margin-top: 40px;
+}
+
+.typetext5{
+    position: absolute;
+    margin-top: 60px;
+}
+
+.nav-wrapper{
+    grid-area: nav-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+
+.dots-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+.browserdot{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+#dot-1{
+    background-color: #fc5058;
+}
+
+#dot-2{
+    background-color: #fec02f;
+}
+
+#dot-3{
+    background-color: #2aca3e;
+}
+
+.showcase{
+    height: 500px;
+    width: 1500px;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.tools{
+    width: 95%;
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 95px;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    grid-auto-rows: 100px;
+}
+.website{
+    height: 500px;
+    width: 700px;
+    background-color: blue;
+}
+
+
+h1{
+  color: green;
+}
+
+img{
+    height: 150px;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+.cat{
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 1300px;
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .screen, .terminal{
+        width: 95%;
+    }
+    .cat{
+        margin-left: 80%;
+        margin-right: 30%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1100px) {
+    .cat{
+        margin-left: 70%;
+        margin-right: 30%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .cat{
+        margin-left: 60%;
+        margin-right: 30%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .description2{
+        width: 476px;
+    }
+
+    .name{
+        font-size: 30px;
+        margin-left: auto;
+        margin-right:auto ;
+    }
+    .title{
+        width: 95%;
+    }
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    transition: all 0.5s ease;
+  }
