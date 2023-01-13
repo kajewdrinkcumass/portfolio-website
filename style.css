@@ -122,6 +122,7 @@ section{
 }
 
 .screen{
+    border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 300px;
