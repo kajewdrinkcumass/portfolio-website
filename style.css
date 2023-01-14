@@ -207,7 +207,7 @@ section{
 
 .tools{
     width: 95%;
-    margin-top: 100px;
+    margin-top: 20vh;
     display: grid;
     grid-gap: 95px;
     grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
@@ -291,3 +291,13 @@ img{
 * {
     transition: all 0.5s ease;
   }
+
+.tiu{
+    margin-top: 20vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 265px;
+    font-size: 16px;
+    font-weight: 550;
+}
